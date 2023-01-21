@@ -1,0 +1,545 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a59152d8-f48e-42f0-adf7-ea725b8d354b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Distrisys DW</ID>
+  <Name>Distrisys DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="06078f30-08fe-4d2c-b3fe-1df3daff580f">
+      <ID>Produit</ID>
+      <Name>Produit</Name>
+      <DimensionID>Produit</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3810a8d9-18fa-4b0d-83ba-e0ed120ba654">
+          <AttributeID>Produit PK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="186ed295-8640-4100-9914-153d79e775b3">
+      <ID>Client</ID>
+      <Name>Client</Name>
+      <DimensionID>Client</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f5f985b2-4e4f-41ee-bb6f-d6319c6dc5e1">
+          <AttributeID>Client PK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9504d47e-2128-4082-9560-565501b3b9fd">
+          <AttributeID>Geographie PK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1384f608-deb9-4564-b6be-f462e41d9144">
+      <ID>Site</ID>
+      <Name>Site</Name>
+      <DimensionID>Site</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f1b71b29-58ab-4a45-8e28-fec89cad531d">
+          <AttributeID>Site PK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fe889ca-061d-48c5-9864-22a0fdbd9ae2">
+          <AttributeID>Geographie PK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d10be4ac-4f94-448a-97a1-b879951995e6">
+      <ID>Temps</ID>
+      <Name>Temps</Name>
+      <DimensionID>Temps</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9c8e49fe-963a-4940-8b6a-ccec130b521c">
+          <AttributeID>Temps PK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b9d7adc7-ad69-42cf-8270-3e765587fe3f">
+      <ID>Dim Temps</ID>
+      <Name>Dim Temps</Name>
+      <DimensionID>Dim Temps</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="46c1de91-1e4d-4f30-ac54-e07e9cf59e49">
+          <AttributeID>Temps PK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="cfa74898-315e-4faa-9c6f-3fabcad9282a">
+      <ID>Fact Facture</ID>
+      <Name>Fact Facture</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a98fadc8-c558-4bbb-bab0-a3bd4fb8e4de">
+          <ID>Prix Catalogue</ID>
+          <Name>Prix Catalogue</Name>
+          <Source dwd:design-time-name="70e6b46d-f44a-4370-a722-476a2582e08d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="09d089ca-19cd-4994-a3de-424200718f3b">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>PrixCatalogue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba2d853d-62e4-4959-a742-26d29c3b67ee">
+          <ID>Remise</ID>
+          <Name>Remise</Name>
+          <Source dwd:design-time-name="8810bb5c-5c23-440b-b14b-322673821abb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9172b9ec-0b69-4179-8da0-b7818aca6f18">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>Remise</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9929ac25-79be-47d4-8892-d948f7065e51">
+          <ID>CA</ID>
+          <Name>CA</Name>
+          <Source dwd:design-time-name="378cb5b7-9b04-47db-a6c0-8715221895a2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dc13e952-680e-427d-a145-cc02efb23f47">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>CA</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2af7e972-525f-4f96-85e2-66471dce5494">
+          <ID>Marge</ID>
+          <Name>Marge</Name>
+          <Source dwd:design-time-name="cf19fa25-a0ac-457f-bdf7-b633aa02bab7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e4deb8f8-6a6c-4d60-9c72-b9c1302e8a3a">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>Marge</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e86cb100-378a-46e1-bf04-9ef00e8c5b7f">
+          <ID>Cout Direct Matière</ID>
+          <Name>Cout Direct Matière</Name>
+          <Source dwd:design-time-name="b0e14062-76c8-429c-a57f-c76d099a2aec">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="68b8536a-2121-4b0c-86ea-991022e6b9a9">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>CoutDirectMatière</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ab06143d-43dc-4ac5-a007-89e199712f02">
+          <ID>Cout Direct Main Oeuvre</ID>
+          <Name>Cout Direct Main Oeuvre</Name>
+          <Source dwd:design-time-name="af5034ff-9603-4646-89b2-6888a37f98e1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="11001a9a-aaca-4baa-afbd-6d890fd63126">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>CoutDirectMainOeuvre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5b384307-9f45-4f21-b05f-c0590c03ea4e">
+          <ID>Cout Indirect</ID>
+          <Name>Cout Indirect</Name>
+          <Source dwd:design-time-name="0bb2b890-cb86-418c-ac30-5467773001c8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2a15b8a0-f1ce-4171-974b-347c8a008b60">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>CoutIndirect</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cc3b8819-40a2-4fac-945c-f365fdc7d4ec">
+          <ID>Quantite</ID>
+          <Name>Quantite</Name>
+          <Source dwd:design-time-name="505bb172-4bb1-4f38-b950-ad50f132dcc0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07fe9247-4fab-471e-badc-f7db3af8af64">
+              <TableID>dbo_FactFacture</TableID>
+              <ColumnID>Quantite</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f04052d5-640f-49a2-9087-250b7cf5b801">
+          <ID>Fact Facture Nombre</ID>
+          <Name>Fact Facture Nombre</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e1466f0d-ac06-4e50-98cd-ef9d50cf42a7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="156ac566-5719-4af3-9ad2-8e270458a0b6">
+              <TableID>dbo_FactFacture</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="33421965-2b4d-4bbe-8c93-a9aa9c4a1354">
+          <CubeDimensionID>Produit</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="afda8e54-6eb2-4ccc-9d89-32ca8ed92110">
+              <AttributeID>Produit PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e1f6881c-d4ad-4b6d-a74e-d9b4ccbd7935">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cbfec980-cec5-462c-a6b2-3d5638e8c37c">
+                    <TableID>dbo_FactFacture</TableID>
+                    <ColumnID>Produit_FK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0fc2419b-5f0e-4d48-9885-10560d7533bc">
+          <CubeDimensionID>Client</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f12f5328-2cc2-46c3-aab6-da5c29324094">
+              <AttributeID>Client PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="197a6eff-2842-4e32-9c85-978d58dc722e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="748d4137-4fa0-4d4e-9662-fa40c9be217b">
+                    <TableID>dbo_FactFacture</TableID>
+                    <ColumnID>Client_FK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="caac6ffa-02af-4e21-a274-17c30e1f2ea6">
+          <CubeDimensionID>Site</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c2e93a62-fcd0-4ad9-aab3-d1c91191e0a4">
+              <AttributeID>Site PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91081867-1c1c-4e3b-ae24-7a16226eb84b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2d30e2bf-3270-47c6-ba39-75e67aa41108">
+                    <TableID>dbo_FactFacture</TableID>
+                    <ColumnID>Site_FK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="361186a4-8e15-48c8-bb29-c83777b8fa9a">
+          <CubeDimensionID>Temps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="99d25daf-a5a2-4841-a3da-f589f8f49671">
+              <AttributeID>Temps PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce2540e2-79d2-4eec-92b5-1e70090ccff7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41e6ed64-0d81-41c9-bee3-adf389b99bf6">
+                    <TableID>dbo_FactFacture</TableID>
+                    <ColumnID>DateFacture_FK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="682733a6-722e-493c-94a2-7119f2abcc89">
+      <ID>Dim Temps</ID>
+      <Name>Dim Temps</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a89e3cd0-c0dc-43b6-83a3-eb3abf0eaa04">
+          <ID>Jour Delannée</ID>
+          <Name>Jour Delannée</Name>
+          <Source dwd:design-time-name="2d1b5e19-7f18-4ac6-8a3c-d17647fa1bed">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b9216421-1165-4747-89a3-b8e20ee6681f">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>JourDelannée</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="30698246-9b74-4db1-b903-75378a3725ba">
+          <ID>Jour Du Semestre</ID>
+          <Name>Jour Du Semestre</Name>
+          <Source dwd:design-time-name="a59eaa88-f3ec-4492-bf7b-569a2e05cd16">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="037f5ff2-e809-4dd0-a713-0aa43630ef84">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>JourDuSemestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3df2f493-39c9-4a89-bcb6-c1959ac68b72">
+          <ID>Jour Du Trimestre</ID>
+          <Name>Jour Du Trimestre</Name>
+          <Source dwd:design-time-name="8ed62d0f-2d96-4ebc-b026-c9a2e24ba691">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="295eb571-6b69-4860-a214-74487c35d14e">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>JourDuTrimestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9400bd5c-4bf6-4773-a518-79e3db334dd8">
+          <ID>Jour Du Mois</ID>
+          <Name>Jour Du Mois</Name>
+          <Source dwd:design-time-name="d90f2e06-038b-4a9b-855a-3ca33e1823fb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fb6228c8-089e-4d11-9181-dffe7eaf0591">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>JourDuMois</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c7bec68a-e3d9-459e-96c9-4a4082cae2c2">
+          <ID>Jour De La Semaine</ID>
+          <Name>Jour De La Semaine</Name>
+          <Source dwd:design-time-name="1e682638-198d-477e-8b9c-5a9d5e796dc3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="82440012-a747-4036-8965-6841ec99763d">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>JourDeLaSemaine</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="475a29a9-f22e-47bf-98c2-a4bfc6be6134">
+          <ID>Semaine Delannée</ID>
+          <Name>Semaine Delannée</Name>
+          <Source dwd:design-time-name="eab0608f-0683-4b20-9459-8347c80aa103">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="31a2ecbe-8bc6-43de-a14e-72d4691d8de0">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>SemaineDelannée</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="84a9db23-3432-4eaa-bb3f-b3b376f6954c">
+          <ID>Mois Delannée</ID>
+          <Name>Mois Delannée</Name>
+          <Source dwd:design-time-name="583c53c1-e8db-4f3a-8581-9fe969d6ff76">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="80a49408-073a-42cb-91f3-7ad0fc8b7adf">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>MoisDelannée</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d18ca6d5-b2c1-4add-bed8-8e622e4d99dc">
+          <ID>Mois Du Semestre</ID>
+          <Name>Mois Du Semestre</Name>
+          <Source dwd:design-time-name="5edb2b5c-0af4-46dc-a817-a74b35d5fb7e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8689885f-a875-4b5b-95b2-bfbea92b7309">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>MoisDuSemestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="00f7ef0e-69d6-4d73-9575-ab24d3bfb2e4">
+          <ID>Mois Du Trimestre</ID>
+          <Name>Mois Du Trimestre</Name>
+          <Source dwd:design-time-name="c460eecf-870c-42e5-a410-668c77b2f193">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="72e9c8b6-9409-4e07-a138-4433ffc8d00b">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>MoisDuTrimestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3d15ad58-18b3-4ea3-a0ed-cdb2eaab5f2c">
+          <ID>Trimestre Delannée</ID>
+          <Name>Trimestre Delannée</Name>
+          <Source dwd:design-time-name="9fc8a0e7-eaa3-44ea-80a6-7bb1b7241f31">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="42834ae3-3b7e-4732-9da0-603b161402d9">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>TrimestreDelannée</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="256bbb95-b61e-434c-a5ed-1ca08708a7dc">
+          <ID>Trimestre Du Semestre</ID>
+          <Name>Trimestre Du Semestre</Name>
+          <Source dwd:design-time-name="99bdd58a-41c7-4321-840c-0e861462e87d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5918968f-629e-45db-9588-2f99ab6efbe6">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>TrimestreDuSemestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="42fc54e9-76df-4f65-937c-e19dfb5ed734">
+          <ID>Semestre Delannée</ID>
+          <Name>Semestre Delannée</Name>
+          <Source dwd:design-time-name="8b1f3067-5b4a-4995-82a9-9e184502df3a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="249184a7-280f-4708-9d2d-dcd9d3473b14">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>SemestreDelannée</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="46a97d55-431a-48df-9853-76cff54be198">
+          <ID>Annee Code</ID>
+          <Name>Annee Code</Name>
+          <Source dwd:design-time-name="3aef2c4a-426c-47b6-bd90-a82c59185b2f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="132df147-ac1e-4123-b18e-261dd947da74">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>AnneeCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8f909082-bf51-49f0-b0e6-b298455cec5a">
+          <ID>Semestre Code</ID>
+          <Name>Semestre Code</Name>
+          <Source dwd:design-time-name="1fa9c215-a5c7-4657-ba8c-650831e335e9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ba1c582c-f4c6-4c13-a6fe-6ffc61d89459">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>SemestreCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="35644727-de76-4130-86ac-0f37de6a08e3">
+          <ID>Trimestre Code</ID>
+          <Name>Trimestre Code</Name>
+          <Source dwd:design-time-name="b767cfc7-a660-4da2-96a6-ded5b675eb56">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e20b9c79-ecee-4169-98e0-f1fdbd87ec50">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>TrimestreCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a941695c-8986-4499-8e1d-51cc04eb2d23">
+          <ID>Mois Code</ID>
+          <Name>Mois Code</Name>
+          <Source dwd:design-time-name="06878fef-4c69-4997-8b2d-908ecddb5745">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f5884c1d-4288-48f8-a804-312eb536151c">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>MoisCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0528890a-aa64-425d-bfed-80fb04c8bc45">
+          <ID>Semaine Code</ID>
+          <Name>Semaine Code</Name>
+          <Source dwd:design-time-name="c3c70bb8-e7b4-4b71-94d2-192f6c4423d5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="de41ea13-353c-4e02-9e60-4058e25ed877">
+              <TableID>dbo_DimTemps</TableID>
+              <ColumnID>SemaineCode</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9271808c-03e6-463d-91dc-77e2ddab5dec">
+          <ID>Dim Temps Nombre</ID>
+          <Name>Dim Temps Nombre</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5e63ab33-aabc-4e63-9c5c-9ecb3587d54d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5b2a7de6-b0cc-496f-aca3-b18b20525441">
+              <TableID>dbo_DimTemps</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e3dcf19a-9553-4064-9fcc-1716334866cf">
+          <CubeDimensionID>Temps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3859873f-a63c-4aaa-be97-92e8acd47849">
+              <AttributeID>Temps PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="19d523c9-2454-4639-a1db-c3fa854f24d7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e15c4136-1390-47c7-bca0-9ed564c0ac6e">
+                    <TableID>dbo_DimTemps</TableID>
+                    <ColumnID>Temps_PK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f3d8fdb-98cf-4822-b28c-5295f0912351">
+          <CubeDimensionID>Dim Temps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="739324e1-333e-4335-9508-9c60d3c9ced7">
+              <AttributeID>Temps PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="408b83c5-6a9b-4e15-9840-3699721a5503">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="acb6d435-fa01-4664-9cd1-a2f016f8acce">
+                    <TableID>dbo_DimTemps</TableID>
+                    <ColumnID>Temps_PK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="10b9de63-81dc-4178-a7b5-1c32d54db251">
+    <DataSourceViewID>Distrisys DW</DataSourceViewID>
+  </Source>
+</Cube>
